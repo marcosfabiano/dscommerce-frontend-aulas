@@ -17,7 +17,6 @@ export default function Login() {
 
   function handleSubmit(event: any) {
     event.preventDefault();
-
     authService
       .loginRequest(formData)
       .then((response) => {
